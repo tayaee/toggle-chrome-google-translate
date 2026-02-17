@@ -1,29 +1,18 @@
 # Project: toggle_chrome_google_translate
 
-This project is managed using `uv`.
+Google Chrome lacks a single shortcut to toggle translations. This tool automates 
+the Google Translate extension using a global hotkey.
 
-## 1. Development & Testing
-Run the root script directly:
-```bash
-uv run main.py
-```
+* Required Extension: 
+  https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb
 
-## 2. Execute Module (CLI)
-Run the packaged module entry point (toggle_chrome_google_translate.cli:main)
-```
-uv run toggle_chrome_google_translate
-```
+### How it Works
+The shortcut **Ctrl + Shift + X** automates three manual steps:
+1. Click the extension icon.
+2. Press **Right Arrow** (to toggle).
+3. Press **Escape** (to close).
 
-## 3. Local Installation
-Install the module globally via `uv` tool storage to run it from anywhere:
-```
-uv tool install .
-toggle_chrome_google_translate
-```
-
-## 4. Standalone Binary Build
-Generate a single `.exe` for environments without Python or `uv`:
-```
-uv run --with pyinstaller pyinstaller --onefile src/toggle_chrome_google_translate/cli.py --name toggle_chrome_google_translate_standalone
-dist\toggle_chrome_google_translate_standalone.exe
-```
+### How to Use
+1. Pin the Google Translate extension in Chrome.
+2. Run `toggle.bat`.
+3. Press **Ctrl + Shift + X** in Chrome to toggle languages instantly.

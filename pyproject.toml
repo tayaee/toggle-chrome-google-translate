@@ -1,7 +1,7 @@
 [project]
 name = "toggle-chrome-google-translate"
 version = "0.1.0"
-description = "Add your description here"
+description = "Toggle language by clicking Google Chrome Google Translate extension icon"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -12,10 +12,3 @@ dependencies = [
     "pyscreeze>=1.0.1",
     "python-dotenv>=1.2.1",
 ]
-
-[project.scripts]
-toggle_chrome_google_translate = "toggle_chrome_google_translate.cli:main"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
