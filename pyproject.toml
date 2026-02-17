@@ -1,0 +1,21 @@
+[project]
+name = "toggle-chrome-google-translate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "keyboard>=0.13.5",
+    "opencv-python>=4.8.0",
+    "pyautogui>=0.9.54",
+    "pygetwindow>=0.0.9",
+    "pyscreeze>=1.0.1",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+toggle_chrome_google_translate = "toggle_chrome_google_translate.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
